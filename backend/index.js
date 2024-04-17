@@ -1,13 +1,8 @@
-const express = require('express')
-const app = express()
-const port = 3001
+const express = require('express');
+var fs = require('fs');
+const app = express();
+const port = 3000;
 
-app.get('/', (req, res) => {
-  res.json({
-    "value 1":"Hello World",
-  })
-})
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+
+app.listen(port, () => {});
