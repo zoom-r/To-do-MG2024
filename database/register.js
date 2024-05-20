@@ -16,4 +16,4 @@ const connection = require('./connection');
     });
 }
 
-module.exports = addUser();
+module.exports = addUser;

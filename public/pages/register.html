@@ -37,12 +37,12 @@
   
                   <div data-mdb-input-init class="form-outline mb-4">
                     <label class="form-label" for="repeat_input">Повторете паролата</label>
-                    <input type="password" id="repeat_input" class="form-control form-control-lg" />                   
+                    <input type="password" id="repeat_input" class="form-control form-control-lg" onchange="checkPassword()"/>                   
                   </div>
   
                   <div class="d-flex justify-content-center">
                     <button type="button"
-                      data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="sendRequest()">Регистрация</button>
+                      data-mdb-button-init data-mdb-ripple-init class="btn btn-success btn-block btn-lg gradient-custom-4 text-body" onclick="console.log(document.getElementById('username_input').value);sendRequest(document.getElementById('username_input').value, document.getElementById('email_input').value, document.getElementById('repeat_input').value)">Регистрация</button>
                   </div>
   
                   <p class="text-center text-muted mt-5 mb-0">Вече имате профил? <a href="/login"
