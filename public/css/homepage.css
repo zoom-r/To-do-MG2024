@@ -6,8 +6,18 @@ body {
     margin-top: 50px;
   }
 
+  .task {
+    display: flex;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+    border: 1px solid gray;
+  }
+  
   #todo-container {
-    background: rgba(14, 91, 199, 0.521);
+    background: rgba(158, 86, 48, 0.521);
     width: 400px;
     margin: 0 auto;
     border: 2px solid #03114c;
@@ -25,6 +35,14 @@ body {
   }
   
   h1 {
+    -webkit-text-stroke: 1px black;
+    color: white;
+    text-shadow:
+        3px 3px 0 #000,
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+       -1px 1px 0 #000,
+        1px 1px 0 #000;
     margin-bottom: 20px; 
     border-color: black;
   }
@@ -45,9 +63,9 @@ body {
     cursor: pointer;
     transition: 0.4s;
     padding: 10px;
-    border: none;
+    border: 1.5px solid #be6734;
     border-radius: 5px;
-    background-color: #051748;
+    background-color: #ed9562;
   }
   
   #input-button:hover {

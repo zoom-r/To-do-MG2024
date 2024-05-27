@@ -27,7 +27,7 @@ function sendRequest(username, email, password){
 
 function checkPassword(){
     var password = document.getElementById("password_input").value;
-    var confirmPassword = document.getElementById("password_input").value;
+    var confirmPassword = document.getElementById("repeat_input").value;
 
     if(password != confirmPassword){
         document.getElementById("password_input").style.borderColor = "red";

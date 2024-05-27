@@ -19,22 +19,51 @@
         class="input-item"
         name="input_box"
         id="input-box"
-        placeholder="Add Task"
+        placeholder="Въведи задача..."
       />
 
       <!-- add button -->
-      <button style="color:rgb(252, 252, 251);" id="input-button" onclick="addTask()">Add</button>
+      <button style="color:rgb(252, 252, 251);" id="input-button" onclick="addTask()">Добави</button>
     </div>
 
     <!-- task list -->
-    <h2>Task List</h2>
-    <ul id="list-container"></ul>
+    <h2>Списък със задачи</h2>
+    <ul id="list-container">
+      <!-- <li>
+        <div class="task">
+          <p>Обади се на мама</p>
+          <p style="font-size: 20px;">ⓘ</p>
+          <input type="checkbox" />
+        </div>
+      </li>
+      <li>
+        <div class="task">
+          <p>Презентация за производствена практика</p>
+          <p style="font-size: 20px;">ⓘ</p>
+          <input type="checkbox"/>
+        </div>
+      </li>
+      <li>
+        <div class="task">
+          <p>Вземи си бележка за месец юни</p>
+          <p style="font-size: 20px;">ⓘ</p>
+          <input type="checkbox" checked="checked" />
+        </div>
+      </li>
+      <li>
+        <div class="task">
+          <p>Подготовка за класна работа по БЕЛ</p>
+          <p style="font-size: 20px;">ⓘ</p>
+          <input type="checkbox" checked="checked" />
+        </div>
+      </li> -->
+    </ul>
     <hr />
 <!-- task list counter -->
 <div class="counter-container">
   <div id="task-counters">
-    Completed: <span id="completed-counter">0</span> | Uncompleted:
-    <span id="uncompleted-counter">0</span>
+    Завършени: <span id="completed-counter">2</span> | Незавършени:
+    <span id="uncompleted-counter">2</span>
   </div>
 </div>
   </div>
